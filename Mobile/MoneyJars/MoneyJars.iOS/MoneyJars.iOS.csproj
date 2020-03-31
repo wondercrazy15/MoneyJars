@@ -68,6 +68,9 @@
     </ItemGroup>
     <ItemGroup>
       <PackageReference Include="Xamarin.Essentials" Version="1.3.1" />
+      <PackageReference Include="MvvmCross">
+        <Version>6.4.1</Version>
+      </PackageReference>
     </ItemGroup>
     <ItemGroup>
         <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Contents.json">
@@ -134,10 +137,17 @@
         <Compile Include="Main.cs" />
         <Compile Include="AppDelegate.cs" />
         <Compile Include="SceneDelegate.cs" />
-        <Compile Include="ViewController.cs" />
-        <Compile Include="ViewController.designer.cs">
-            <DependentUpon>ViewController.cs</DependentUpon>
+        <Compile Include="Views\BaseView.cs" />
+        <Compile Include="Views\LoginView.cs" />
+        <Compile Include="Views\LoginView.designer.cs">
+          <DependentUpon>LoginView.cs</DependentUpon>
         </Compile>
+    </ItemGroup>
+    <ItemGroup>
+      <ProjectReference Include="..\MoneyJars.Core\MoneyJars.Core.csproj">
+        <Project>{818EAEA7-3866-415D-9DCF-348CD2DDA777}</Project>
+        <Name>MoneyJars.Core</Name>
+      </ProjectReference>
     </ItemGroup>
     <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>
