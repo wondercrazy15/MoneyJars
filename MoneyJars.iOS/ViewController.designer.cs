@@ -11,7 +11,7 @@ using UIKit;
 
 namespace MoneyJars.iOS
 {
-    [Register("ViewController")]
+    [Register ("ViewController")]
     partial class ViewController
     {
     }

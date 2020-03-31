@@ -5,9 +5,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="MvvmCross" Version="6.4.1" />
-  </ItemGroup>
-  <ItemGroup>
     <Folder Include="Helper\" />
     <Folder Include="Interfaces\" />
     <Folder Include="Models\" />
