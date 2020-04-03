@@ -21,7 +21,7 @@ namespace MoneyJars.iOS
             // If not required for your application you can safely delete this method
             return base.FinishedLaunching(application, launchOptions);
         }
-
+        
         // UISceneSession Lifecycle
 
         [Export("application:configurationForConnectingSceneSession:options:")]

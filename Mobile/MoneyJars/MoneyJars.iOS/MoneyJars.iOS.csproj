@@ -118,6 +118,15 @@
         <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon60.png">
             <Visible>false</Visible>
         </ImageAsset>
+        <ImageAsset Include="Resources\Assets.xcassets\Contents.json" />
+        <ImageAsset Include="Resources\Assets.xcassets\facebook.imageset\Contents.json" />
+        <ImageAsset Include="Resources\Assets.xcassets\facebook.imageset\facebook.png" />
+        <ImageAsset Include="Resources\Assets.xcassets\google.imageset\Contents.json" />
+        <ImageAsset Include="Resources\Assets.xcassets\google.imageset\google.png" />
+        <ImageAsset Include="Resources\Assets.xcassets\Default-BG.imageset\Default-BG.jpg" />
+        <ImageAsset Include="Resources\Assets.xcassets\Default-BG.imageset\Contents.json" />
+        <ImageAsset Include="Resources\Assets.xcassets\Mobiles-BG.imageset\Contents.json" />
+        <ImageAsset Include="Resources\Assets.xcassets\Mobiles-BG.imageset\Mobiles1.png" />
     </ItemGroup>
     <ItemGroup>
         <Folder Include="Resources\" />
@@ -144,6 +153,22 @@
         <Compile Include="Views\LoginView.cs" />
         <Compile Include="Views\LoginView.designer.cs">
           <DependentUpon>LoginView.cs</DependentUpon>
+        </Compile>
+        <Compile Include="Views\WalkThroughView.cs" />
+        <Compile Include="Views\WalkThroughView.designer.cs">
+          <DependentUpon>WalkThroughView.cs</DependentUpon>
+        </Compile>
+        <Compile Include="Cells\WalkThroughCell.cs" />
+        <Compile Include="Cells\WalkThroughCell.designer.cs">
+          <DependentUpon>WalkThroughCell.cs</DependentUpon>
+        </Compile>
+        <Compile Include="Views\SelectCurrencyView.cs" />
+        <Compile Include="Views\SelectCurrencyView.designer.cs">
+          <DependentUpon>SelectCurrencyView.cs</DependentUpon>
+        </Compile>
+        <Compile Include="Cells\CurrencyListCell.cs" />
+        <Compile Include="Cells\CurrencyListCell.designer.cs">
+          <DependentUpon>CurrencyListCell.cs</DependentUpon>
         </Compile>
     </ItemGroup>
     <ItemGroup>

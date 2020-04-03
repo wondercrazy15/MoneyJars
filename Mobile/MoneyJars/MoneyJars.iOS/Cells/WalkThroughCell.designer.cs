@@ -11,19 +11,28 @@ using UIKit;
 
 namespace MoneyJars.iOS
 {
-    [Register ("LoginView")]
-    partial class LoginView
+    [Register ("WalkThroughCell")]
+    partial class WalkThroughCell
     {
-        [Action ("btnLoginWithFacebookClicked:")]
+        [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
-        partial void btnLoginWithFacebookClicked (UIKit.UIButton sender);
+        UIKit.UILabel lblMessage { get; set; }
 
-        [Action ("btnLoginWithGoggleClicked:")]
+        [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
-        partial void btnLoginWithGoggleClicked (UIKit.UIButton sender);
+        UIKit.UILabel lblTitle { get; set; }
 
         void ReleaseDesignerOutlets ()
         {
+            if (lblMessage != null) {
+                lblMessage.Dispose ();
+                lblMessage = null;
+            }
+
+            if (lblTitle != null) {
+                lblTitle.Dispose ();
+                lblTitle = null;
+            }
         }
     }
 }
