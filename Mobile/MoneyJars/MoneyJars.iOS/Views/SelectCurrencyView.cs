@@ -52,8 +52,10 @@ namespace MoneyJars.iOS
 
         }
 
-
-    }
+        public override UIStatusBarStyle PreferredStatusBarStyle()
+        {
+            return UIStatusBarStyle.LightContent;
+        }
 
         public nint RowsInSection(UITableView tableView, nint section)
         {
