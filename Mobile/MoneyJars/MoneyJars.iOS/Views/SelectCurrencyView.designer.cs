@@ -16,7 +16,23 @@ namespace MoneyJars.iOS
     {
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UIButton btnBack { get; set; }
+
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UILabel lblTitle { get; set; }
+
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
         UIKit.UITableView tblCurrencyList { get; set; }
+
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UITextField txtSearchCurrency { get; set; }
+
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UIView viewTopBar { get; set; }
 
         [Action ("btnBackClicked:")]
         [GeneratedCode ("iOS Designer", "1.0")]
@@ -28,9 +44,29 @@ namespace MoneyJars.iOS
 
         void ReleaseDesignerOutlets ()
         {
+            if (btnBack != null) {
+                btnBack.Dispose ();
+                btnBack = null;
+            }
+
+            if (lblTitle != null) {
+                lblTitle.Dispose ();
+                lblTitle = null;
+            }
+
             if (tblCurrencyList != null) {
                 tblCurrencyList.Dispose ();
                 tblCurrencyList = null;
+            }
+
+            if (txtSearchCurrency != null) {
+                txtSearchCurrency.Dispose ();
+                txtSearchCurrency = null;
+            }
+
+            if (viewTopBar != null) {
+                viewTopBar.Dispose ();
+                viewTopBar = null;
             }
         }
     }

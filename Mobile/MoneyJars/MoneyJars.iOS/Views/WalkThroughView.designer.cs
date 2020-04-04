@@ -16,6 +16,10 @@ namespace MoneyJars.iOS
     {
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UIButton btnNext { get; set; }
+
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
         UIKit.UICollectionView clvWalkThrough { get; set; }
 
         [Outlet]
@@ -32,6 +36,11 @@ namespace MoneyJars.iOS
 
         void ReleaseDesignerOutlets ()
         {
+            if (btnNext != null) {
+                btnNext.Dispose ();
+                btnNext = null;
+            }
+
             if (clvWalkThrough != null) {
                 clvWalkThrough.Dispose ();
                 clvWalkThrough = null;

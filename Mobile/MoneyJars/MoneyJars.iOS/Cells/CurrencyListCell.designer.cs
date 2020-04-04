@@ -22,6 +22,10 @@ namespace MoneyJars.iOS
         [GeneratedCode ("iOS Designer", "1.0")]
         UIKit.UILabel lblCurrencyTitle { get; set; }
 
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UIView viewBackGround { get; set; }
+
         void ReleaseDesignerOutlets ()
         {
             if (lblCurrencyName != null) {
@@ -32,6 +36,11 @@ namespace MoneyJars.iOS
             if (lblCurrencyTitle != null) {
                 lblCurrencyTitle.Dispose ();
                 lblCurrencyTitle = null;
+            }
+
+            if (viewBackGround != null) {
+                viewBackGround.Dispose ();
+                viewBackGround = null;
             }
         }
     }

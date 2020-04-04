@@ -1,5 +1,6 @@
 using CoreGraphics;
 using Foundation;
+using MoneyJars.Core.Helper;
 using MoneyJars.Core.ViewModels;
 using MoneyJars.iOS.Views;
 using System;
@@ -23,6 +24,10 @@ namespace MoneyJars.iOS
 
         public override void ViewDidLoad()
         {
+            //Set Colors
+            SetColors();
+
+
             //base.ViewDidLoad();
             Dictionary<string, string> first = new Dictionary<string, string>();
             first.Add("Title", "Just 2 minutes a day!");
@@ -40,14 +45,25 @@ namespace MoneyJars.iOS
             walkThroughList.Add(second);
             walkThroughList.Add(third);
 
+            clvWalkThrough.Delegate = this;
+            clvWalkThrough.DataSource = this;
+
+        }
+
+        private void SetColors()
+        {
+
+            View.BackgroundColor = GlobalConst.App_Extra_Space_Color;
+            clvWalkThrough.BackgroundColor = GlobalConst.App_Primary_Color;
+            btnNext.BackgroundColor = GlobalConst.App_Buttons_Color;
+            pageControl.CurrentPageIndicatorTintColor = GlobalConst.App_Buttons_Color;
+            pageControl.TintColor = GlobalConst.App_Text_Color;
         }
 
         public override void ViewDidAppear(bool animated)
         {
             base.ViewDidAppear(animated);
 
-            clvWalkThrough.Delegate = this;
-            clvWalkThrough.DataSource = this;
 
         }
 
@@ -64,7 +80,14 @@ namespace MoneyJars.iOS
 
         partial void btnNextClicked(UIButton sender)
         {
-
+            if(pageControl.CurrentPage == 2)
+            {
+                SelectCurrencyView vc = Storyboard.InstantiateViewController("SelectCurrencyView") as SelectCurrencyView;
+                NavigationController.PushViewController(vc, true);
+                return;
+            }
+            NSIndexPath indexPath = NSIndexPath.FromRowSection(pageControl.CurrentPage + 1, 0);
+            clvWalkThrough.ScrollToItem(indexPath, UICollectionViewScrollPosition.None, true);
         }
 
         public nint GetItemsCount(UICollectionView collectionView, nint section)

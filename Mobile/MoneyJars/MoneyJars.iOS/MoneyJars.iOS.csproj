@@ -170,6 +170,31 @@
         <Compile Include="Cells\CurrencyListCell.designer.cs">
           <DependentUpon>CurrencyListCell.cs</DependentUpon>
         </Compile>
+        <Compile Include="Views\DashboardTabBarController.cs" />
+        <Compile Include="Views\DashboardTabBarController.designer.cs">
+          <DependentUpon>DashboardTabBarController.cs</DependentUpon>
+        </Compile>
+        <Compile Include="Views\AddTransactionView.cs" />
+        <Compile Include="Views\AddTransactionView.designer.cs">
+          <DependentUpon>AddTransactionView.cs</DependentUpon>
+        </Compile>
+        <Compile Include="Views\HistoryView.cs" />
+        <Compile Include="Views\HistoryView.designer.cs">
+          <DependentUpon>HistoryView.cs</DependentUpon>
+        </Compile>
+        <Compile Include="Views\HomeView.cs" />
+        <Compile Include="Views\HomeView.designer.cs">
+          <DependentUpon>HomeView.cs</DependentUpon>
+        </Compile>
+        <Compile Include="Views\ReportsView.cs" />
+        <Compile Include="Views\ReportsView.designer.cs">
+          <DependentUpon>ReportsView.cs</DependentUpon>
+        </Compile>
+        <Compile Include="Views\SettingView.cs" />
+        <Compile Include="Views\SettingView.designer.cs">
+          <DependentUpon>SettingView.cs</DependentUpon>
+        </Compile>
+        <Compile Include="Sources\SelectCurrencyTableSource.cs" />
     </ItemGroup>
     <ItemGroup>
       <ProjectReference Include="..\MoneyJars.Core\MoneyJars.Core.csproj">

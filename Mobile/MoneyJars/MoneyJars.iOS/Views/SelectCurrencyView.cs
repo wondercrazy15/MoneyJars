@@ -1,4 +1,5 @@
 using Foundation;
+using MoneyJars.Core.Helper;
 using MoneyJars.Core.ViewModels;
 using MoneyJars.iOS.Views;
 using System;
@@ -7,7 +8,7 @@ using UIKit;
 
 namespace MoneyJars.iOS
 {
-    public partial class SelectCurrencyView : BaseView<SelectCurrencyViewModel>, IUITableViewDelegate, IUITableViewDataSource
+    public partial class SelectCurrencyView : BaseView<SelectCurrencyViewModel>
     {
         
         List<Dictionary<string, string>> currencyList = new List<Dictionary<string, string>>();
@@ -24,6 +25,8 @@ namespace MoneyJars.iOS
         {
             //base.ViewDidLoad();
 
+            SetColors();
+
             Dictionary<string, string> first = new Dictionary<string, string>();
             first.Add("Title", "US dollars");
             first.Add("Name", "USD");
@@ -39,11 +42,28 @@ namespace MoneyJars.iOS
             currencyList.Add(first);
             currencyList.Add(second);
             currencyList.Add(third);
+            currencyList.Add(first);
+            currencyList.Add(second);
+            currencyList.Add(third);
+            currencyList.Add(first);
+            currencyList.Add(second);
+            currencyList.Add(third);
 
-            tblCurrencyList.Delegate = this;
-            tblCurrencyList.DataSource = this;
+            //tblCurrencyList.Delegate = this;
+            tblCurrencyList.Source = new SelectCurrencyTableSource(currencyList, this);
+            
 
 
+
+        }
+
+        private void SetColors()
+        {
+            View.BackgroundColor = GlobalConst.App_Extra_Space_Color;
+            btnBack.TintColor = GlobalConst.App_Text_Color;
+            lblTitle.TextColor = GlobalConst.App_Text_Color;
+            viewTopBar.BackgroundColor = GlobalConst.App_Primary_Color;
+            txtSearchCurrency.TextColor = GlobalConst.App_Primary_Color;
         }
 
         public override void ViewDidAppear(bool animated)
@@ -55,21 +75,6 @@ namespace MoneyJars.iOS
         public override UIStatusBarStyle PreferredStatusBarStyle()
         {
             return UIStatusBarStyle.LightContent;
-        }
-
-        public nint RowsInSection(UITableView tableView, nint section)
-        {
-            return currencyList.Count;
-        }
-
-        public UITableViewCell GetCell(UITableView tableView, NSIndexPath indexPath)
-        {
-            CurrencyListCell cell = tblCurrencyList.DequeueReusableCell("CurrencyListCell", indexPath) as CurrencyListCell;
-
-            Dictionary<string, string> data = currencyList[indexPath.Row];
-            
-
-            return cell;
         }
 
         partial void btnBackClicked(UIButton sender)
