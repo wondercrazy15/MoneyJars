@@ -195,6 +195,17 @@
           <DependentUpon>SettingView.cs</DependentUpon>
         </Compile>
         <Compile Include="Sources\SelectCurrencyTableSource.cs" />
+        <Compile Include="Cells\HistoryCell.cs" />
+        <Compile Include="Cells\HistoryCell.designer.cs">
+          <DependentUpon>HistoryCell.cs</DependentUpon>
+        </Compile>
+        <Compile Include="Cells\JarListCell.cs" />
+        <Compile Include="Cells\JarListCell.designer.cs">
+          <DependentUpon>JarListCell.cs</DependentUpon>
+        </Compile>
+        <Compile Include="Sources\HomeHistoryListTableSource.cs" />
+        <Compile Include="Sources\JarsListTableSource.cs" />
+        <Compile Include="Sources\HistoryListTableSource.cs" />
     </ItemGroup>
     <ItemGroup>
       <ProjectReference Include="..\MoneyJars.Core\MoneyJars.Core.csproj">

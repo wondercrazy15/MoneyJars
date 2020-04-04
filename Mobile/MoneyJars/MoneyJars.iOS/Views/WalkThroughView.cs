@@ -54,6 +54,7 @@ namespace MoneyJars.iOS
         {
 
             View.BackgroundColor = GlobalConst.App_Extra_Space_Color;
+            
             clvWalkThrough.BackgroundColor = GlobalConst.App_Primary_Color;
             btnNext.BackgroundColor = GlobalConst.App_Buttons_Color;
             pageControl.CurrentPageIndicatorTintColor = GlobalConst.App_Buttons_Color;

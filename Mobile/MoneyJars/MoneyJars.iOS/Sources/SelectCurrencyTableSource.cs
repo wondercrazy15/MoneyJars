@@ -22,6 +22,7 @@ namespace MoneyJars.iOS
 
             Dictionary<string, string> data = currencyList[indexPath.Row];
             cell.UpdateCell(data);
+            cell.SelectionStyle = UITableViewCellSelectionStyle.None;
             return cell;
         }
 

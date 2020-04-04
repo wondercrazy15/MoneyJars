@@ -1,4 +1,5 @@
 using Foundation;
+using MoneyJars.Core.Helper;
 using System;
 using UIKit;
 
@@ -8,21 +9,20 @@ namespace MoneyJars.iOS
     {
         public DashboardTabBarController (IntPtr handle) : base (handle)
         {
-        }
+            this.TabBar.SelectedImageTintColor = GlobalConst.App_Buttons_Color;
 
-        public DashboardTabBarController()
-        {
-            HomeView home = Storyboard.InstantiateViewController("HomeView") as HomeView;
-            HistoryView history = Storyboard.InstantiateViewController("HistoryView") as HistoryView;
-            AddTransactionView addTransaction = Storyboard.InstantiateViewController("AddTransactionView") as AddTransactionView;
-            ReportsView reports = Storyboard.InstantiateViewController("ReportsView") as ReportsView;
-            SettingView setting= Storyboard.InstantiateViewController("SettingView") as SettingView;
 
-            var tabs = new UIViewController[] {
-                home, history, addTransaction, reports, setting
-            };
+            //HomeView home = Storyboard.InstantiateViewController("HomeView") as HomeView;
+            //HistoryView history = Storyboard.InstantiateViewController("HistoryView") as HistoryView;
+            //AddTransactionView addTransaction = Storyboard.InstantiateViewController("AddTransactionView") as AddTransactionView;
+            //ReportsView reports = Storyboard.InstantiateViewController("ReportsView") as ReportsView;
+            //SettingView setting = Storyboard.InstantiateViewController("SettingView") as SettingView;
 
-            ViewControllers = tabs;
+            //var tabs = new UIViewController[] {
+            //    home, history, addTransaction, reports, setting
+            //};
+
+            //ViewControllers = tabs;
 
         }
 
