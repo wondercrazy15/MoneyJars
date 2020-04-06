@@ -9,5 +9,11 @@ namespace MoneyJars.iOS
         public ReportsView (IntPtr handle) : base (handle)
         {
         }
+
+
+        public override UIStatusBarStyle PreferredStatusBarStyle()
+        {
+            return UIStatusBarStyle.LightContent;
+        }
     }
 }

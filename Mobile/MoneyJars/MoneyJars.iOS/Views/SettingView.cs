@@ -20,6 +20,11 @@ namespace MoneyJars.iOS
             SetColors();
         }
 
+public override UIStatusBarStyle PreferredStatusBarStyle()
+        {
+            return UIStatusBarStyle.LightContent;
+        }
+
         private void SetColors()
         {
             viewMain.BackgroundColor = GlobalConst.App_Primary_Color;
