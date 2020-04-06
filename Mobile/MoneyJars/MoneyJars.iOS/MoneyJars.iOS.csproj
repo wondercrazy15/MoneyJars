@@ -127,6 +127,8 @@
         <ImageAsset Include="Resources\Assets.xcassets\Default-BG.imageset\Contents.json" />
         <ImageAsset Include="Resources\Assets.xcassets\Mobiles-BG.imageset\Contents.json" />
         <ImageAsset Include="Resources\Assets.xcassets\Mobiles-BG.imageset\Mobiles1.png" />
+        <ImageAsset Include="Resources\Assets.xcassets\facebook-white.imageset\facebook %281%29.png" />
+        <ImageAsset Include="Resources\Assets.xcassets\facebook-white.imageset\Contents.json" />
     </ItemGroup>
     <ItemGroup>
         <Folder Include="Resources\" />
