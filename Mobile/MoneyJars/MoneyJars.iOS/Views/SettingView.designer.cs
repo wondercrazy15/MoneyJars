@@ -260,6 +260,10 @@ namespace MoneyJars.iOS
 
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UIView viewExtraSpace { get; set; }
+
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
         UIKit.UIView viewMain { get; set; }
 
         void ReleaseDesignerOutlets ()
@@ -567,6 +571,11 @@ namespace MoneyJars.iOS
             if (viewBG6 != null) {
                 viewBG6.Dispose ();
                 viewBG6 = null;
+            }
+
+            if (viewExtraSpace != null) {
+                viewExtraSpace.Dispose ();
+                viewExtraSpace = null;
             }
 
             if (viewMain != null) {

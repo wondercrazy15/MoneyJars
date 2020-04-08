@@ -20,5 +20,8 @@ namespace MoneyJars.Core.Helper
         public static UIColor App_Text_Color = UIColor.White;
         public static UIColor App_Extra_Space_Color = UIColor.Black;
 
+        public static UIColor App_Green_Color = UIColor.SystemGreenColor;
+        public static UIColor App_Red_Color = UIColor.FromRGB(250.0f / 255.0f, 59.0f / 255.0f, 86.0f / 255.0f);
+
     }
 }

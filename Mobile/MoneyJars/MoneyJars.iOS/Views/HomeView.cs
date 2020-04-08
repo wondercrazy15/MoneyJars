@@ -33,6 +33,8 @@ namespace MoneyJars.iOS
 
         private void SetColors()
         {
+            viewExtraSpace.BackgroundColor = GlobalConst.App_Extra_Space_Color;
+
             lblUserName.TextColor = GlobalConst.App_Text_Color;
             lblGreetings.TextColor = GlobalConst.App_Text_Color;
 

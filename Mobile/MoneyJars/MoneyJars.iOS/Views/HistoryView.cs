@@ -33,9 +33,10 @@ namespace MoneyJars.iOS
 
         private void SetColors()
         {
+            viewExtraSpace.BackgroundColor = GlobalConst.App_Extra_Space_Color;
+
             viewBG1.BackgroundColor = GlobalConst.App_Primary_Color;
             viewBG2.BackgroundColor = GlobalConst.App_Secondary_Color;
-
 
             lblSelectAJarTitle.TextColor = GlobalConst.App_Text_Color;
             lblSelectedJar.TextColor = GlobalConst.App_Text_Color;

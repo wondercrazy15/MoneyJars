@@ -138,6 +138,10 @@ namespace MoneyJars.iOS
         [GeneratedCode ("iOS Designer", "1.0")]
         UIKit.UIView viewBG9 { get; set; }
 
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UIView viewExtraSpace { get; set; }
+
         void ReleaseDesignerOutlets ()
         {
             if (btnMoreHistory != null) {
@@ -293,6 +297,11 @@ namespace MoneyJars.iOS
             if (viewBG9 != null) {
                 viewBG9.Dispose ();
                 viewBG9 = null;
+            }
+
+            if (viewExtraSpace != null) {
+                viewExtraSpace.Dispose ();
+                viewExtraSpace = null;
             }
         }
     }
