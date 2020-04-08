@@ -40,6 +40,9 @@ namespace MoneyJars.iOS
 
             btnNotification.TintColor = GlobalConst.App_Text_Color;
 
+            btnIncomeImage.TintColor = GlobalConst.App_Green_Color;
+            btnExpenseImage.TintColor = GlobalConst.App_Red_Color;
+
             lblBalanceTitle.TextColor = GlobalConst.App_Text_Color;
             lblBalanceValue.TextColor = GlobalConst.App_Text_Color;
 

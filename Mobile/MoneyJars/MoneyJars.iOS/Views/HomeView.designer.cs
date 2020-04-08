@@ -16,6 +16,14 @@ namespace MoneyJars.iOS
     {
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UIButton btnExpenseImage { get; set; }
+
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UIButton btnIncomeImage { get; set; }
+
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
         UIKit.UIButton btnMoreHistory { get; set; }
 
         [Outlet]
@@ -144,6 +152,16 @@ namespace MoneyJars.iOS
 
         void ReleaseDesignerOutlets ()
         {
+            if (btnExpenseImage != null) {
+                btnExpenseImage.Dispose ();
+                btnExpenseImage = null;
+            }
+
+            if (btnIncomeImage != null) {
+                btnIncomeImage.Dispose ();
+                btnIncomeImage = null;
+            }
+
             if (btnMoreHistory != null) {
                 btnMoreHistory.Dispose ();
                 btnMoreHistory = null;

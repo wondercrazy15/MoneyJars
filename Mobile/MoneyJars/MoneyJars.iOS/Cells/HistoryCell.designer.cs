@@ -20,6 +20,10 @@ namespace MoneyJars.iOS
 
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UIButton imgJar { get; set; }
+
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
         UIKit.UILabel lblHistoryAmount { get; set; }
 
         [Outlet]
@@ -34,11 +38,20 @@ namespace MoneyJars.iOS
         [GeneratedCode ("iOS Designer", "1.0")]
         UIKit.UILabel lblHistoryTitle { get; set; }
 
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UILabel lblSeparator { get; set; }
+
         void ReleaseDesignerOutlets ()
         {
             if (imgHistory != null) {
                 imgHistory.Dispose ();
                 imgHistory = null;
+            }
+
+            if (imgJar != null) {
+                imgJar.Dispose ();
+                imgJar = null;
             }
 
             if (lblHistoryAmount != null) {
@@ -59,6 +72,11 @@ namespace MoneyJars.iOS
             if (lblHistoryTitle != null) {
                 lblHistoryTitle.Dispose ();
                 lblHistoryTitle = null;
+            }
+
+            if (lblSeparator != null) {
+                lblSeparator.Dispose ();
+                lblSeparator = null;
             }
         }
     }

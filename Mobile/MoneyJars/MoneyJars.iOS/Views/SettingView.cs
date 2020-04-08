@@ -108,5 +108,73 @@ namespace MoneyJars.iOS
             lblInformationTitle.TextColor = GlobalConst.App_Text_Color;
             imgArrow13.TintColor = GlobalConst.App_Text_Color;
         }
+
+        partial void btnMyProfileClicked(UIButton sender)
+        {
+            ProfileView vc = Storyboard.InstantiateViewController("ProfileView") as ProfileView;
+            NavigationController.PushViewController(vc, true);
+        }
+
+        partial void MyReferenceCodeClicked(UIButton sender)
+        {
+            MyReferenceCodeView vc = Storyboard.InstantiateViewController("MyReferenceCodeView") as MyReferenceCodeView;
+            NavigationController.PushViewController(vc, true);
+        }
+
+        partial void btnReferencedCodeClicked(UIButton sender)
+        {
+            ReferencedCodeView vc = Storyboard.InstantiateViewController("ReferencedCodeView") as ReferencedCodeView;
+            NavigationController.PushViewController(vc, true);
+        }
+
+        partial void btnGeneralSettingClicked(UIButton sender)
+        {
+            
+        }
+
+        partial void btnJarSettingClicked(UIButton sender)
+        {
+            
+        }
+
+        partial void btnRecurringTransactionClicked(UIButton sender)
+        {
+            
+        }
+
+        partial void btnGuideClicked(UIButton sender)
+        {
+            
+        }
+
+        partial void btnFAQClicked(UIButton sender)
+        {
+            
+        }
+
+        partial void btnFacebookFanpageClicked(UIButton sender)
+        {
+            
+        }
+
+        partial void btnRateAppClicked(UIButton sender)
+        {
+            
+        }
+
+        partial void btnFeedbackClicked(UIButton sender)
+        {
+            
+        }
+
+        partial void btnTermClicked(UIButton sender)
+        {
+            
+        }
+
+        partial void btnAppInformationClicked(UIButton sender)
+        {
+            
+        }
     }
 }

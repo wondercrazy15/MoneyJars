@@ -208,6 +208,18 @@
         <Compile Include="Sources\HomeHistoryListTableSource.cs" />
         <Compile Include="Sources\JarsListTableSource.cs" />
         <Compile Include="Sources\HistoryListTableSource.cs" />
+        <Compile Include="Views\ProfileView.cs" />
+        <Compile Include="Views\ProfileView.designer.cs">
+          <DependentUpon>ProfileView.cs</DependentUpon>
+        </Compile>
+        <Compile Include="Views\MyReferenceCodeView.cs" />
+        <Compile Include="Views\MyReferenceCodeView.designer.cs">
+          <DependentUpon>MyReferenceCodeView.cs</DependentUpon>
+        </Compile>
+        <Compile Include="Views\ReferencedCodeView.cs" />
+        <Compile Include="Views\ReferencedCodeView.designer.cs">
+          <DependentUpon>ReferencedCodeView.cs</DependentUpon>
+        </Compile>
     </ItemGroup>
     <ItemGroup>
       <ProjectReference Include="..\MoneyJars.Core\MoneyJars.Core.csproj">

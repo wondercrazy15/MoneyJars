@@ -266,6 +266,58 @@ namespace MoneyJars.iOS
         [GeneratedCode ("iOS Designer", "1.0")]
         UIKit.UIView viewMain { get; set; }
 
+        [Action ("btnAppInformationClicked:")]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        partial void btnAppInformationClicked (UIKit.UIButton sender);
+
+        [Action ("btnFacebookFanpageClicked:")]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        partial void btnFacebookFanpageClicked (UIKit.UIButton sender);
+
+        [Action ("btnFAQClicked:")]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        partial void btnFAQClicked (UIKit.UIButton sender);
+
+        [Action ("btnFeedbackClicked:")]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        partial void btnFeedbackClicked (UIKit.UIButton sender);
+
+        [Action ("btnGeneralSettingClicked:")]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        partial void btnGeneralSettingClicked (UIKit.UIButton sender);
+
+        [Action ("btnGuideClicked:")]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        partial void btnGuideClicked (UIKit.UIButton sender);
+
+        [Action ("btnJarSettingClicked:")]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        partial void btnJarSettingClicked (UIKit.UIButton sender);
+
+        [Action ("btnMyProfileClicked:")]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        partial void btnMyProfileClicked (UIKit.UIButton sender);
+
+        [Action ("btnRateAppClicked:")]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        partial void btnRateAppClicked (UIKit.UIButton sender);
+
+        [Action ("btnRecurringTransactionClicked:")]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        partial void btnRecurringTransactionClicked (UIKit.UIButton sender);
+
+        [Action ("btnReferencedCodeClicked:")]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        partial void btnReferencedCodeClicked (UIKit.UIButton sender);
+
+        [Action ("btnTermClicked:")]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        partial void btnTermClicked (UIKit.UIButton sender);
+
+        [Action ("MyReferenceCodeClicked:")]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        partial void MyReferenceCodeClicked (UIKit.UIButton sender);
+
         void ReleaseDesignerOutlets ()
         {
             if (btnReferenceCode != null) {
