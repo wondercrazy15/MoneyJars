@@ -129,17 +129,20 @@ namespace MoneyJars.iOS
 
         partial void btnGeneralSettingClicked(UIButton sender)
         {
-            
+            GeneralSettingView vc = Storyboard.InstantiateViewController("GeneralSettingView") as GeneralSettingView;
+            NavigationController.PushViewController(vc, true);
         }
 
         partial void btnJarSettingClicked(UIButton sender)
         {
-            
+            JarSettingView vc = Storyboard.InstantiateViewController("JarSettingView") as JarSettingView;
+            NavigationController.PushViewController(vc, true);
         }
 
         partial void btnRecurringTransactionClicked(UIButton sender)
         {
-            
+            RecurringTransactionView vc = Storyboard.InstantiateViewController("RecurringTransactionView") as RecurringTransactionView;
+            NavigationController.PushViewController(vc, true);
         }
 
         partial void btnGuideClicked(UIButton sender)
@@ -149,7 +152,8 @@ namespace MoneyJars.iOS
 
         partial void btnFAQClicked(UIButton sender)
         {
-            
+            FAQsView vc = Storyboard.InstantiateViewController("FAQsView") as FAQsView;
+            NavigationController.PushViewController(vc, true);
         }
 
         partial void btnFacebookFanpageClicked(UIButton sender)

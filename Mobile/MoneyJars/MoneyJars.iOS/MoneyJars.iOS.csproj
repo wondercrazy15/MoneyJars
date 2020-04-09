@@ -129,6 +129,10 @@
         <ImageAsset Include="Resources\Assets.xcassets\Mobiles-BG.imageset\Mobiles1.png" />
         <ImageAsset Include="Resources\Assets.xcassets\facebook-white.imageset\facebook %281%29.png" />
         <ImageAsset Include="Resources\Assets.xcassets\facebook-white.imageset\Contents.json" />
+        <ImageAsset Include="Resources\Assets.xcassets\toggle-off.imageset\toggle-off.png" />
+        <ImageAsset Include="Resources\Assets.xcassets\toggle-off.imageset\Contents.json" />
+        <ImageAsset Include="Resources\Assets.xcassets\toggle-on.imageset\toggle-on.png" />
+        <ImageAsset Include="Resources\Assets.xcassets\toggle-on.imageset\Contents.json" />
     </ItemGroup>
     <ItemGroup>
         <Folder Include="Resources\" />
@@ -220,6 +224,28 @@
         <Compile Include="Views\ReferencedCodeView.designer.cs">
           <DependentUpon>ReferencedCodeView.cs</DependentUpon>
         </Compile>
+        <Compile Include="Views\FAQsView.cs" />
+        <Compile Include="Views\FAQsView.designer.cs">
+          <DependentUpon>FAQsView.cs</DependentUpon>
+        </Compile>
+        <Compile Include="Views\GeneralSettingView.cs" />
+        <Compile Include="Views\GeneralSettingView.designer.cs">
+          <DependentUpon>GeneralSettingView.cs</DependentUpon>
+        </Compile>
+        <Compile Include="Views\JarSettingView.cs" />
+        <Compile Include="Views\JarSettingView.designer.cs">
+          <DependentUpon>JarSettingView.cs</DependentUpon>
+        </Compile>
+        <Compile Include="Views\RecurringTransactionView.cs" />
+        <Compile Include="Views\RecurringTransactionView.designer.cs">
+          <DependentUpon>RecurringTransactionView.cs</DependentUpon>
+        </Compile>
+        <Compile Include="Cells\JarSettingCell.cs" />
+        <Compile Include="Cells\JarSettingCell.designer.cs">
+          <DependentUpon>JarSettingCell.cs</DependentUpon>
+        </Compile>
+        <Compile Include="Sources\JarSettingListTableSource.cs" />
+        <Compile Include="Sources\RecurringTransactionListTableSource.cs" />
     </ItemGroup>
     <ItemGroup>
       <ProjectReference Include="..\MoneyJars.Core\MoneyJars.Core.csproj">
