@@ -246,6 +246,18 @@
         </Compile>
         <Compile Include="Sources\JarSettingListTableSource.cs" />
         <Compile Include="Sources\RecurringTransactionListTableSource.cs" />
+        <Compile Include="Views\InformationView.cs" />
+        <Compile Include="Views\InformationView.designer.cs">
+          <DependentUpon>InformationView.cs</DependentUpon>
+        </Compile>
+        <Compile Include="Views\TermsView.cs" />
+        <Compile Include="Views\TermsView.designer.cs">
+          <DependentUpon>TermsView.cs</DependentUpon>
+        </Compile>
+        <Compile Include="Views\PasscodeView.cs" />
+        <Compile Include="Views\PasscodeView.designer.cs">
+          <DependentUpon>PasscodeView.cs</DependentUpon>
+        </Compile>
     </ItemGroup>
     <ItemGroup>
       <ProjectReference Include="..\MoneyJars.Core\MoneyJars.Core.csproj">

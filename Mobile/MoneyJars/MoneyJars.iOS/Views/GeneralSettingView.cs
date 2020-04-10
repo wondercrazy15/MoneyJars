@@ -4,6 +4,7 @@ using MoneyJars.Core.ViewModels;
 using MoneyJars.iOS.Views;
 using System;
 using UIKit;
+using LocalAuthentication;
 
 namespace MoneyJars.iOS
 {
@@ -120,6 +121,12 @@ namespace MoneyJars.iOS
             }
             else
             {
+                _ = GlobalMethod.DelayedMethod(500, () =>
+                {
+                    PasscodeView vc = Storyboard.InstantiateViewController("PasscodeView") as PasscodeView;
+                    PresentViewController(vc, true, null);
+                });
+                
                 imgPasscodeSwitch.Image = UIImage.FromBundle("toggle-on");
                 isOnPasscode = true;
             }

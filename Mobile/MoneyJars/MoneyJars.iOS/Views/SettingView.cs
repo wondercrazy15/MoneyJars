@@ -1,12 +1,16 @@
 using Foundation;
+using MessageUI;
 using MoneyJars.Core.Helper;
 using System;
 using UIKit;
 
 namespace MoneyJars.iOS
 {
-    public partial class SettingView : UIViewController
+    public partial class SettingView : UIViewController, IMFMailComposeViewControllerDelegate
     {
+
+        MFMailComposeViewController mailVC;
+
         public SettingView (IntPtr handle) : base (handle)
         {
         }
@@ -158,27 +162,41 @@ namespace MoneyJars.iOS
 
         partial void btnFacebookFanpageClicked(UIButton sender)
         {
-            
+            UIApplication.SharedApplication.OpenUrl(new NSUrl(GlobalConst.FacebookUrl));
         }
 
         partial void btnRateAppClicked(UIButton sender)
         {
-            
+            UIApplication.SharedApplication.OpenUrl(new NSUrl(GlobalConst.iTunesUrl));
         }
 
         partial void btnFeedbackClicked(UIButton sender)
         {
+            if(MFMailComposeViewController.CanSendMail)
+            {
+                mailVC = new MFMailComposeViewController();
+                mailVC.MailComposeDelegate = this;
+                mailVC.SetSubject("Feedback for iOS App");
+                mailVC.SetMessageBody("Enter your feedback", false);
+                mailVC.SetToRecipients(new string[1] { "support@moneyoi.io" });
+                PresentViewController(mailVC, true, () =>
+                {
+
+                });
+            }
             
         }
 
         partial void btnTermClicked(UIButton sender)
         {
-            
+            TermsView vc = Storyboard.InstantiateViewController("TermsView") as TermsView;
+            NavigationController.PushViewController(vc, true);
         }
 
         partial void btnAppInformationClicked(UIButton sender)
         {
-            
+            InformationView vc = Storyboard.InstantiateViewController("InformationView") as InformationView;
+            NavigationController.PushViewController(vc, true);
         }
     }
 }
