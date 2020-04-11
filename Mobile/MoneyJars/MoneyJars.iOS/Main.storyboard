@@ -4553,10 +4553,10 @@
             </objects>
             <point key="canvasLocation" x="4606.875" y="1832.746"/>
         </scene>
-        <!--View Controller-->
+        <!--Passcode View-->
         <scene sceneID="mPs-u5-yDj">
             <objects>
-                <viewController id="GeR-6i-Aol" sceneMemberID="viewController" customClass="PasscodeView" storyboardIdentifier="PasscodeView" useStoryboardIdentifierAsRestorationIdentifier="YES">
+                <viewController storyboardIdentifier="PasscodeView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="GeR-6i-Aol" customClass="PasscodeView" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="HTa-Oh-i9A">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -4579,9 +4579,9 @@
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" image="chevron.left" catalog="system"/>
                                                 <connections>
+                                                    <action selector="btnBackClicked:" destination="GeR-6i-Aol" eventType="touchUpInside" id="415206"/>
                                                     <action selector="btnBackClicked:" destination="1Mx-L6-byK" eventType="touchUpInside" id="N5m-li-VkP"/>
                                                     <action selector="btnBackClicked:" destination="6uG-TW-Fs3" eventType="touchUpInside" id="daq-2j-WU2"/>
-                                                    <action selector="btnBackClicked:" destination="GeR-6i-Aol" id="415206" eventType="touchUpInside"/>
                                                 </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Passcode" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="32E-pQ-waN">
@@ -4672,7 +4672,7 @@
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
                                                         <connections>
-                                                            <action selector="btn1Clicked:" destination="GeR-6i-Aol" id="415211" eventType="touchUpInside"/>
+                                                            <action selector="btn1Clicked:" destination="GeR-6i-Aol" eventType="touchUpInside" id="415211"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eWY-Em-MGF">
@@ -4683,7 +4683,7 @@
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
                                                         <connections>
-                                                            <action selector="btn2Clicked:" destination="GeR-6i-Aol" id="415212" eventType="touchUpInside"/>
+                                                            <action selector="btn2Clicked:" destination="GeR-6i-Aol" eventType="touchUpInside" id="415212"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oZr-vg-cZX">
@@ -4694,7 +4694,7 @@
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
                                                         <connections>
-                                                            <action selector="btn3Clicked:" destination="GeR-6i-Aol" id="415213" eventType="touchUpInside"/>
+                                                            <action selector="btn3Clicked:" destination="GeR-6i-Aol" eventType="touchUpInside" id="415213"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -4727,7 +4727,7 @@
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
                                                         <connections>
-                                                            <action selector="btn4Clicked:" destination="GeR-6i-Aol" id="415214" eventType="touchUpInside"/>
+                                                            <action selector="btn4Clicked:" destination="GeR-6i-Aol" eventType="touchUpInside" id="415214"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WoG-J6-hQ1">
@@ -4738,7 +4738,7 @@
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
                                                         <connections>
-                                                            <action selector="btn5Clicked:" destination="GeR-6i-Aol" id="415215" eventType="touchUpInside"/>
+                                                            <action selector="btn5Clicked:" destination="GeR-6i-Aol" eventType="touchUpInside" id="415215"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v3J-5W-TOs">
@@ -4749,7 +4749,7 @@
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
                                                         <connections>
-                                                            <action selector="btn6Clicked:" destination="GeR-6i-Aol" id="415216" eventType="touchUpInside"/>
+                                                            <action selector="btn6Clicked:" destination="GeR-6i-Aol" eventType="touchUpInside" id="415216"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -4782,7 +4782,7 @@
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
                                                         <connections>
-                                                            <action selector="btn7Clicked:" destination="GeR-6i-Aol" id="415217" eventType="touchUpInside"/>
+                                                            <action selector="btn7Clicked:" destination="GeR-6i-Aol" eventType="touchUpInside" id="415217"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FG5-u4-wwM">
@@ -4793,7 +4793,7 @@
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
                                                         <connections>
-                                                            <action selector="btn8Clicked:" destination="GeR-6i-Aol" id="415210" eventType="touchUpInside"/>
+                                                            <action selector="btn8Clicked:" destination="GeR-6i-Aol" eventType="touchUpInside" id="415210"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tMs-JS-49w">
@@ -4804,7 +4804,7 @@
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
                                                         <connections>
-                                                            <action selector="btn9Clicked:" destination="GeR-6i-Aol" id="415209" eventType="touchUpInside"/>
+                                                            <action selector="btn9Clicked:" destination="GeR-6i-Aol" eventType="touchUpInside" id="415209"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -4845,7 +4845,7 @@
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
                                                         <connections>
-                                                            <action selector="btn0Clicked:" destination="GeR-6i-Aol" id="415208" eventType="touchUpInside"/>
+                                                            <action selector="btn0Clicked:" destination="GeR-6i-Aol" eventType="touchUpInside" id="415208"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h5U-ph-HKm">
@@ -4856,7 +4856,7 @@
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
                                                         <connections>
-                                                            <action selector="btnEraseClicked:" destination="GeR-6i-Aol" id="415207" eventType="touchUpInside"/>
+                                                            <action selector="btnEraseClicked:" destination="GeR-6i-Aol" eventType="touchUpInside" id="415207"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -4955,14 +4955,7 @@
                         <viewLayoutGuide key="safeArea" id="buR-Sc-mIR"/>
                     </view>
                     <connections>
-                        <outlet property="viewExtraSpace" destination="nRL-Ch-g2J" id="name-outlet-nRL-Ch-g2J"/>
-                        <outlet property="viewMain" destination="a9g-Zv-1hX" id="name-outlet-a9g-Zv-1hX"/>
-                        <outlet property="btnBack" destination="Ya0-CW-ptB" id="name-outlet-Ya0-CW-ptB"/>
-                        <outlet property="lblPasscodeTitle" destination="32E-pQ-waN" id="name-outlet-32E-pQ-waN"/>
-                        <outlet property="txtPasscode1" destination="ToH-Bd-24s" id="name-outlet-ToH-Bd-24s"/>
-                        <outlet property="txtPasscode2" destination="bRz-2n-xy3" id="name-outlet-bRz-2n-xy3"/>
-                        <outlet property="txtPasscode3" destination="3Oz-0h-gba" id="name-outlet-3Oz-0h-gba"/>
-                        <outlet property="txtPasscode4" destination="pJt-Wb-VKS" id="name-outlet-pJt-Wb-VKS"/>
+                        <outlet property="btn0" destination="Ahd-on-C4q" id="name-outlet-Ahd-on-C4q"/>
                         <outlet property="btn1" destination="6sq-ht-bfG" id="name-outlet-6sq-ht-bfG"/>
                         <outlet property="btn2" destination="eWY-Em-MGF" id="name-outlet-eWY-Em-MGF"/>
                         <outlet property="btn3" destination="oZr-vg-cZX" id="name-outlet-oZr-vg-cZX"/>
@@ -4972,8 +4965,15 @@
                         <outlet property="btn7" destination="48u-4n-bdw" id="name-outlet-48u-4n-bdw"/>
                         <outlet property="btn8" destination="FG5-u4-wwM" id="name-outlet-FG5-u4-wwM"/>
                         <outlet property="btn9" destination="tMs-JS-49w" id="name-outlet-tMs-JS-49w"/>
-                        <outlet property="btn0" destination="Ahd-on-C4q" id="name-outlet-Ahd-on-C4q"/>
+                        <outlet property="btnBack" destination="Ya0-CW-ptB" id="name-outlet-Ya0-CW-ptB"/>
                         <outlet property="btnErase" destination="h5U-ph-HKm" id="name-outlet-h5U-ph-HKm"/>
+                        <outlet property="lblPasscodeTitle" destination="32E-pQ-waN" id="name-outlet-32E-pQ-waN"/>
+                        <outlet property="txtPasscode1" destination="ToH-Bd-24s" id="name-outlet-ToH-Bd-24s"/>
+                        <outlet property="txtPasscode2" destination="bRz-2n-xy3" id="name-outlet-bRz-2n-xy3"/>
+                        <outlet property="txtPasscode3" destination="3Oz-0h-gba" id="name-outlet-3Oz-0h-gba"/>
+                        <outlet property="txtPasscode4" destination="pJt-Wb-VKS" id="name-outlet-pJt-Wb-VKS"/>
+                        <outlet property="viewExtraSpace" destination="nRL-Ch-g2J" id="name-outlet-nRL-Ch-g2J"/>
+                        <outlet property="viewMain" destination="a9g-Zv-1hX" id="name-outlet-a9g-Zv-1hX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VPG-0w-zJa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -6369,10 +6369,10 @@
             </objects>
             <point key="canvasLocation" x="5878" y="2572"/>
         </scene>
-        <!--View Controller-->
+        <!--Terms View-->
         <scene sceneID="Yte-JV-GO0">
             <objects>
-                <viewController useStoryboardIdentifierAsRestorationIdentifier="YES" id="HiU-Xf-Qu0" sceneMemberID="viewController" customClass="TermsView" storyboardIdentifier="TermsView">
+                <viewController storyboardIdentifier="TermsView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="HiU-Xf-Qu0" customClass="TermsView" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ZLq-oT-EOW">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -6395,8 +6395,8 @@
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" image="chevron.left" catalog="system"/>
                                                 <connections>
+                                                    <action selector="btnBackClicked:" destination="HiU-Xf-Qu0" eventType="touchUpInside" id="415204"/>
                                                     <action selector="btnBackClicked:" destination="6uG-TW-Fs3" eventType="touchUpInside" id="AMo-tQ-dE2"/>
-                                                    <action selector="btnBackClicked:" destination="HiU-Xf-Qu0" id="415204" eventType="touchUpInside"/>
                                                 </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Terms" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SJo-nx-2uI">
@@ -6453,22 +6453,22 @@
                         <viewLayoutGuide key="safeArea" id="hYW-YZ-iAO"/>
                     </view>
                     <connections>
-                        <outlet property="viewExtraSpace" destination="s25-AM-YF9" id="name-outlet-s25-AM-YF9"/>
-                        <outlet property="viewMain" destination="ZdO-d8-vpx" id="name-outlet-ZdO-d8-vpx"/>
                         <outlet property="btnBack" destination="JX0-II-8yT" id="name-outlet-JX0-II-8yT"/>
                         <outlet property="lblTermsTitle" destination="SJo-nx-2uI" id="name-outlet-SJo-nx-2uI"/>
-                        <outlet property="webViewTerms" destination="1Lw-AO-lSN" id="name-outlet-1Lw-AO-lSN"/>
+                        <outlet property="viewExtraSpace" destination="s25-AM-YF9" id="name-outlet-s25-AM-YF9"/>
+                        <outlet property="viewMain" destination="ZdO-d8-vpx" id="name-outlet-ZdO-d8-vpx"/>
                         <outlet property="webViewLoader" destination="Mmg-VN-N25" id="name-outlet-Mmg-VN-N25"/>
+                        <outlet property="webViewTerms" destination="1Lw-AO-lSN" id="name-outlet-1Lw-AO-lSN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ens-Fc-b4l" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="6503" y="2564"/>
         </scene>
-        <!--View Controller-->
+        <!--Information View-->
         <scene sceneID="0o2-9a-Jkn">
             <objects>
-                <viewController id="6jw-tn-uV3" sceneMemberID="viewController" customClass="InformationView" storyboardIdentifier="InformationView" useStoryboardIdentifierAsRestorationIdentifier="YES">
+                <viewController storyboardIdentifier="InformationView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="6jw-tn-uV3" customClass="InformationView" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Goh-VD-s7W">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -6491,8 +6491,8 @@
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" image="chevron.left" catalog="system"/>
                                                 <connections>
+                                                    <action selector="btnBackClicked:" destination="6jw-tn-uV3" eventType="touchUpInside" id="415205"/>
                                                     <action selector="btnBackClicked:" destination="6uG-TW-Fs3" eventType="touchUpInside" id="6L8-Kk-Eo3"/>
-                                                    <action selector="btnBackClicked:" destination="6jw-tn-uV3" id="415205" eventType="touchUpInside"/>
                                                 </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Information" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P5q-qd-pRt">
@@ -6592,28 +6592,171 @@
                         <viewLayoutGuide key="safeArea" id="hI7-UD-kcL"/>
                     </view>
                     <connections>
-                        <outlet property="viewExtraSpace" destination="tik-p1-guS" id="name-outlet-tik-p1-guS"/>
-                        <outlet property="viewMain" destination="2Sm-ZI-NUp" id="name-outlet-2Sm-ZI-NUp"/>
                         <outlet property="btnBack" destination="0j3-kA-xqI" id="name-outlet-0j3-kA-xqI"/>
-                        <outlet property="lblInformationTitle" destination="P5q-qd-pRt" id="name-outlet-P5q-qd-pRt"/>
                         <outlet property="imgAppIcon" destination="fuP-0C-HRh" id="name-outlet-fuP-0C-HRh"/>
                         <outlet property="lblAppName" destination="uEs-M4-VhM" id="name-outlet-uEs-M4-VhM"/>
-                        <outlet property="lblVersion" destination="xzt-Xx-OZG" id="name-outlet-xzt-Xx-OZG"/>
                         <outlet property="lblDevice" destination="Bhd-RP-BHc" id="name-outlet-Bhd-RP-BHc"/>
+                        <outlet property="lblInformationTitle" destination="P5q-qd-pRt" id="name-outlet-P5q-qd-pRt"/>
                         <outlet property="lblUserId" destination="DcH-fE-tD6" id="name-outlet-DcH-fE-tD6"/>
+                        <outlet property="lblVersion" destination="xzt-Xx-OZG" id="name-outlet-xzt-Xx-OZG"/>
+                        <outlet property="viewExtraSpace" destination="tik-p1-guS" id="name-outlet-tik-p1-guS"/>
+                        <outlet property="viewMain" destination="2Sm-ZI-NUp" id="name-outlet-2Sm-ZI-NUp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cZM-IA-vft" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="7132.5" y="2557.394"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="Pqe-PO-2J0">
+            <objects>
+                <viewController useStoryboardIdentifierAsRestorationIdentifier="YES" id="udj-iJ-kiD" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4tM-OE-WTh">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sdP-4N-frk">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" pagingEnabled="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="wE3-0e-Vt5">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="818"/>
+                                        <color key="backgroundColor" red="0.08235294118" green="0.14117647059999999" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="Ici-bI-i4n">
+                                            <size key="itemSize" width="287" height="393"/>
+                                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        </collectionViewFlowLayout>
+                                        <cells>
+                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="WalkThroughCell" id="fSd-mr-Xvk" customClass="WalkThroughCell">
+                                                <rect key="frame" x="0.0" y="0.0" width="287" height="393"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="SSg-2w-SDs">
+                                                    <rect key="frame" x="0.0" y="0.0" width="287" height="393"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <subviews>
+                                                        <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ips-h9-8q3" fixedFrame="YES">
+                                                            <rect key="frame" x="0.0" y="0.0" width="287" height="393"/>
+                                                            <subviews>
+                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Mobiles-BG" translatesAutoresizingMaskIntoConstraints="NO" id="oxp-1C-pF3">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="287" height="196"/>
+                                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                                                    <color key="backgroundColor" red="0.08235294118" green="0.14117647059999999" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                </imageView>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Just 2 minutes a day!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tXY-Cm-OeJ">
+                                                                    <rect key="frame" x="20" y="336" width="247" height="25"/>
+                                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Using MoneyJars to make your spending habit well-planned" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wER-x8-5bt">
+                                                                    <rect key="frame" x="20" y="376" width="247" height="50"/>
+                                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
+                                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        </view>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstItem="Ips-h9-8q3" firstAttribute="leading" secondItem="SSg-2w-SDs" secondAttribute="leading" id="HlD-aF-QUc"/>
+                                                        <constraint firstAttribute="trailing" secondItem="Ips-h9-8q3" secondAttribute="trailing" id="SBY-db-7bt"/>
+                                                        <constraint firstItem="Ips-h9-8q3" firstAttribute="top" secondItem="SSg-2w-SDs" secondAttribute="top" id="kI9-jb-Dft"/>
+                                                        <constraint firstAttribute="bottom" secondItem="Ips-h9-8q3" secondAttribute="bottom" id="kwi-4h-nvB"/>
+                                                    </constraints>
+                                                </collectionViewCellContentView>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <size key="customSize" width="287" height="393"/>
+                                                <connections>
+                                                    <outlet property="lblMessage" destination="wER-x8-5bt" id="FdI-qv-fB0"/>
+                                                    <outlet property="lblTitle" destination="tXY-Cm-OeJ" id="Iky-m8-xhM"/>
+                                                </connections>
+                                            </collectionViewCell>
+                                        </cells>
+                                    </collectionView>
+                                    <pageControl opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="4e5-7K-CFn">
+                                        <rect key="frame" x="187.5" y="706" width="39" height="37"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="37" id="bED-SQ-xl9"/>
+                                        </constraints>
+                                        <color key="pageIndicatorTintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="currentPageIndicatorTintColor" red="0.0" green="0.72941176470000002" blue="0.70980392160000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </pageControl>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1hc-a3-775">
+                                        <rect key="frame" x="266" y="20" width="34" height="40"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="7PS-1I-aH3"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                        <state key="normal" title="SKIP">
+                                            <color key="titleColor" red="0.08235294118" green="0.14117647059999999" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mme-yP-GDd">
+                                        <rect key="frame" x="20" y="753" width="374" height="40"/>
+                                        <color key="backgroundColor" red="0.0" green="0.72941176470000002" blue="0.70980392160000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="Qm9-Jr-IVK"/>
+                                        </constraints>
+                                        <state key="normal" title="Next">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="mme-yP-GDd" firstAttribute="leading" secondItem="sdP-4N-frk" secondAttribute="leading" constant="20" id="CjC-SD-hf3"/>
+                                    <constraint firstItem="wE3-0e-Vt5" firstAttribute="top" secondItem="sdP-4N-frk" secondAttribute="top" id="F8P-FX-DXQ"/>
+                                    <constraint firstAttribute="bottom" secondItem="mme-yP-GDd" secondAttribute="bottom" constant="25" id="LCm-BB-0nS"/>
+                                    <constraint firstItem="wE3-0e-Vt5" firstAttribute="leading" secondItem="sdP-4N-frk" secondAttribute="leading" id="O3y-8f-Zfc"/>
+                                    <constraint firstAttribute="trailing" secondItem="1hc-a3-775" secondAttribute="trailing" constant="20" id="PHd-cz-ZSq"/>
+                                    <constraint firstItem="mme-yP-GDd" firstAttribute="top" secondItem="4e5-7K-CFn" secondAttribute="bottom" constant="10" id="Ptf-5u-Gr5"/>
+                                    <constraint firstAttribute="trailing" secondItem="mme-yP-GDd" secondAttribute="trailing" constant="20" id="RXC-b9-Vum"/>
+                                    <constraint firstAttribute="trailing" secondItem="wE3-0e-Vt5" secondAttribute="trailing" id="T1R-V4-xI1"/>
+                                    <constraint firstItem="1hc-a3-775" firstAttribute="top" secondItem="sdP-4N-frk" secondAttribute="top" constant="20" id="TbS-a6-UGH"/>
+                                    <constraint firstItem="4e5-7K-CFn" firstAttribute="centerX" secondItem="sdP-4N-frk" secondAttribute="centerX" id="e9J-8P-33V"/>
+                                    <constraint firstAttribute="bottom" secondItem="wE3-0e-Vt5" secondAttribute="bottom" id="fxW-5f-pC7"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="sdP-4N-frk" firstAttribute="trailing" secondItem="CUc-6e-aIk" secondAttribute="trailing" id="7MH-GN-Y83"/>
+                            <constraint firstItem="sdP-4N-frk" firstAttribute="leading" secondItem="CUc-6e-aIk" secondAttribute="leading" id="JpP-mX-db7"/>
+                            <constraint firstItem="sdP-4N-frk" firstAttribute="bottom" secondItem="CUc-6e-aIk" secondAttribute="bottom" id="OyW-QG-PfF"/>
+                            <constraint firstItem="sdP-4N-frk" firstAttribute="top" secondItem="CUc-6e-aIk" secondAttribute="top" id="Qg7-Ea-bZF"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="CUc-6e-aIk"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="haa-uj-if4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6531" y="1117"/>
+        </scene>
     </scenes>
     <resources>
         <image name="Default-BG" width="408" height="612"/>
         <image name="Mobiles-BG" width="820" height="470"/>
+        <image name="book.circle" catalog="system" width="64" height="60"/>
+        <image name="circle.grid.2x2.fill" catalog="system" width="64" height="56"/>
         <image name="facebook" width="24" height="24"/>
         <image name="facebook-white" width="24" height="24"/>
         <image name="google" width="24" height="24"/>
+        <image name="person.crop.circle.fill.badge.plus" catalog="system" width="64" height="50"/>
+        <image name="stop.circle" catalog="system" width="64" height="60"/>
         <image name="toggle-off" width="50" height="50"/>
         <image name="toggle-on" width="50" height="50"/>
         <image name="indianrupeesign.circle" catalog="system"/>

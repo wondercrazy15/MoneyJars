@@ -15,6 +15,9 @@ namespace MoneyJars.iOS
         bool isOnTouchId = false;
         bool isOnEnableNotification = false;
 
+        string BiometryType = "";
+
+
         public GeneralSettingView (IntPtr handle) : base (handle)
         {
         }
@@ -142,9 +145,23 @@ namespace MoneyJars.iOS
             }
             else
             {
+                _ = GlobalMethod.DelayedMethod(500, () =>
+                {
+                    LoadTouchId();
+                });
                 imgTouchIdSwitch.Image = UIImage.FromBundle("toggle-on");
                 isOnTouchId = true;
             }
+        }
+
+        private void LoadTouchId()
+        {
+            StartLoadingTouchId();
+        }
+
+        private void StartLoadingTouchId()
+        {
+            
         }
 
         partial void btnEnableNotificationSwitchClicked(UIButton sender)

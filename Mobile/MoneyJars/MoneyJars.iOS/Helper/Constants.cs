@@ -5,7 +5,7 @@ namespace MoneyJars.iOS.Helper
 {
     public static class Constants
     {
-
+        //Changes on iOS
         public static int ScreenWidth = Convert.ToInt32(UIScreen.MainScreen.Bounds.Width);
         public static int ScreenHeight = Convert.ToInt32(UIScreen.MainScreen.Bounds.Height);
 
