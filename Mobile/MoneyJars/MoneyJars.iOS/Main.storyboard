@@ -6611,12 +6611,9 @@
     <resources>
         <image name="Default-BG" width="408" height="612"/>
         <image name="Mobiles-BG" width="820" height="470"/>
-        <image name="circle.grid.2x2.fill" catalog="system" width="64" height="56"/>
         <image name="facebook" width="24" height="24"/>
         <image name="facebook-white" width="24" height="24"/>
         <image name="google" width="24" height="24"/>
-        <image name="person.crop.circle.fill.badge.plus" catalog="system" width="64" height="50"/>
-        <image name="stop.circle" catalog="system" width="64" height="60"/>
         <image name="toggle-off" width="50" height="50"/>
         <image name="toggle-on" width="50" height="50"/>
         <image name="indianrupeesign.circle" catalog="system"/>
@@ -6646,8 +6643,8 @@
         <image name="lock" catalog="system"/>
         <image name="qrcode.viewfinder" catalog="system"/>
         <image name="bell" catalog="system"/>
+        <image name="delete.left.fill" catalog="system"/>
         <image name="paperplane" catalog="system"/>
         <image name="scope" catalog="system"/>
-        <image name="delete.left.fill" catalog="system"/>
     </resources>
 </document>

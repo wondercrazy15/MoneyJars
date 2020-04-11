@@ -1,5 +1,6 @@
 using Foundation;
 using MoneyJars.Core.Helper;
+using MoneyJars.iOS.Helper;
 using System;
 using UIKit;
 
@@ -16,9 +17,9 @@ namespace MoneyJars.iOS
             lblCurrencyTitle.Text = data["Title"];
             lblCurrencyName.Text = data["Name"];
 
-            viewBackGround.BackgroundColor = GlobalConst.App_Primary_Color;
-            lblCurrencyTitle.TextColor = GlobalConst.App_Text_Color;
-            lblCurrencyName.TextColor = GlobalConst.App_Text_Color;
+            viewBackGround.BackgroundColor = Constants.App_Primary_Color;
+            lblCurrencyTitle.TextColor = Constants.App_Text_Color;
+            lblCurrencyName.TextColor = Constants.App_Text_Color;
         }
     }
 }

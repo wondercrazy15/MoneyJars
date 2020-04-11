@@ -1,6 +1,7 @@
 using Foundation;
 using MoneyJars.Core.Helper;
 using MoneyJars.Core.ViewModels;
+using MoneyJars.iOS.Helper;
 using MoneyJars.iOS.Views;
 using System;
 using System.Collections.Generic;
@@ -34,16 +35,16 @@ namespace MoneyJars.iOS
 
         private void SetColors()
         {
-            viewExtraSpace.BackgroundColor = GlobalConst.App_Extra_Space_Color;
-            viewMain.BackgroundColor = GlobalConst.App_Primary_Color;
+            viewExtraSpace.BackgroundColor = Constants.App_Extra_Space_Color;
+            viewMain.BackgroundColor = Constants.App_Primary_Color;
 
-            tblJarSettings.BackgroundColor = GlobalConst.App_Primary_Color;
+            tblJarSettings.BackgroundColor = Constants.App_Primary_Color;
 
-            btnBack.TintColor = GlobalConst.App_Text_Color;
-            lblJarSettingTitle.TextColor = GlobalConst.App_Text_Color;
-            btnSave.SetTitleColor(GlobalConst.App_Buttons_Color, UIControlState.Normal);
+            btnBack.TintColor = Constants.App_Text_Color;
+            lblJarSettingTitle.TextColor = Constants.App_Text_Color;
+            btnSave.SetTitleColor(Constants.App_Buttons_Color, UIControlState.Normal);
 
-            lblPieChartHere.TextColor = GlobalConst.App_Text_Color;
+            lblPieChartHere.TextColor = Constants.App_Text_Color;
 
         }
 

@@ -5,6 +5,7 @@ using MoneyJars.iOS.Views;
 using System;
 using UIKit;
 using LocalAuthentication;
+using MoneyJars.iOS.Helper;
 
 namespace MoneyJars.iOS
 {
@@ -66,43 +67,43 @@ namespace MoneyJars.iOS
 
         private void SetColors()
         {
-            viewExtraSpace.BackgroundColor = GlobalConst.App_Extra_Space_Color;
-            viewMain.BackgroundColor = GlobalConst.App_Primary_Color;
+            viewExtraSpace.BackgroundColor = Constants.App_Extra_Space_Color;
+            viewMain.BackgroundColor = Constants.App_Primary_Color;
 
-            btnBack.SetTitleColor(GlobalConst.App_Text_Color, UIControlState.Normal);
-            lblGeneralSettingTitle.TextColor = GlobalConst.App_Text_Color;
+            btnBack.SetTitleColor(Constants.App_Text_Color, UIControlState.Normal);
+            lblGeneralSettingTitle.TextColor = Constants.App_Text_Color;
 
-            viewBG1.BackgroundColor = GlobalConst.App_Secondary_Color;
-            viewBG2.BackgroundColor = GlobalConst.App_Secondary_Color;
-            viewBG3.BackgroundColor = GlobalConst.App_Secondary_Color;
-            viewBG4.BackgroundColor = GlobalConst.App_Secondary_Color;
+            viewBG1.BackgroundColor = Constants.App_Secondary_Color;
+            viewBG2.BackgroundColor = Constants.App_Secondary_Color;
+            viewBG3.BackgroundColor = Constants.App_Secondary_Color;
+            viewBG4.BackgroundColor = Constants.App_Secondary_Color;
 
-            imgPasscode.TintColor = GlobalConst.App_Text_Color;
-            lblPasscodeTitle.TextColor = GlobalConst.App_Text_Color;
-            lblSeparator1.BackgroundColor = GlobalConst.App_Text_Color;
+            imgPasscode.TintColor = Constants.App_Text_Color;
+            lblPasscodeTitle.TextColor = Constants.App_Text_Color;
+            lblSeparator1.BackgroundColor = Constants.App_Text_Color;
 
-            imgTouchId.TintColor = GlobalConst.App_Text_Color;
-            lblTouchIdTitle.TextColor = GlobalConst.App_Text_Color;
+            imgTouchId.TintColor = Constants.App_Text_Color;
+            lblTouchIdTitle.TextColor = Constants.App_Text_Color;
 
-            lblLanguageTitle.TextColor = GlobalConst.App_Text_Color;
-            imgLanguage.TintColor = GlobalConst.App_Text_Color;
-            lblSeparator2.BackgroundColor = GlobalConst.App_Text_Color;
+            lblLanguageTitle.TextColor = Constants.App_Text_Color;
+            imgLanguage.TintColor = Constants.App_Text_Color;
+            lblSeparator2.BackgroundColor = Constants.App_Text_Color;
 
-            lblCurrencyTitle.TextColor = GlobalConst.App_Text_Color;
-            imgCurrency.TintColor = GlobalConst.App_Text_Color;
+            lblCurrencyTitle.TextColor = Constants.App_Text_Color;
+            imgCurrency.TintColor = Constants.App_Text_Color;
 
-            imgNotification.TintColor = GlobalConst.App_Text_Color;
-            lblNotificationTitle.TextColor = GlobalConst.App_Text_Color;
-            lblSeparator3.BackgroundColor = GlobalConst.App_Text_Color;
+            imgNotification.TintColor = Constants.App_Text_Color;
+            lblNotificationTitle.TextColor = Constants.App_Text_Color;
+            lblSeparator3.BackgroundColor = Constants.App_Text_Color;
 
-            imgNotificationTime.TintColor = GlobalConst.App_Text_Color;
-            lblNotificationTimeTitle.TextColor = GlobalConst.App_Text_Color;
+            imgNotificationTime.TintColor = Constants.App_Text_Color;
+            lblNotificationTimeTitle.TextColor = Constants.App_Text_Color;
 
-            lblFactoryResetTitle.TextColor = GlobalConst.App_Text_Color;
-            imgFactoryReset.TintColor = GlobalConst.App_Text_Color;
-            lblSeparator4.BackgroundColor = GlobalConst.App_Text_Color;
+            lblFactoryResetTitle.TextColor = Constants.App_Text_Color;
+            imgFactoryReset.TintColor = Constants.App_Text_Color;
+            lblSeparator4.BackgroundColor = Constants.App_Text_Color;
 
-            lblVersionTitle.TextColor = GlobalConst.App_Text_Color;
+            lblVersionTitle.TextColor = Constants.App_Text_Color;
 
 
         }

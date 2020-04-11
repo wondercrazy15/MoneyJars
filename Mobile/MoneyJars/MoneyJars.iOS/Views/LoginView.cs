@@ -1,5 +1,6 @@
 using MoneyJars.Core.Helper;
 using MoneyJars.Core.ViewModels;
+using MoneyJars.iOS.Helper;
 using MoneyJars.iOS.Views;
 using System;
 using UIKit;
@@ -25,8 +26,8 @@ namespace MoneyJars.iOS
 
         private void setColors()
         {
-            imgAppLogo.TintColor = GlobalConst.App_Text_Color;
-            lblAppName.TextColor = GlobalConst.App_Text_Color;
+            imgAppLogo.TintColor = Constants.App_Text_Color;
+            lblAppName.TextColor = Constants.App_Text_Color;
         }
 
         public override UIStatusBarStyle PreferredStatusBarStyle()

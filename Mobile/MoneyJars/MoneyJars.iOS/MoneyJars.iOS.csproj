@@ -258,6 +258,8 @@
         <Compile Include="Views\PasscodeView.designer.cs">
           <DependentUpon>PasscodeView.cs</DependentUpon>
         </Compile>
+        <Compile Include="Helper\Constants.cs" />
+        <Compile Include="Helper\Methods.cs" />
     </ItemGroup>
     <ItemGroup>
       <ProjectReference Include="..\MoneyJars.Core\MoneyJars.Core.csproj">

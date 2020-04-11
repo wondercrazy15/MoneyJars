@@ -1,6 +1,7 @@
 using Foundation;
 using MoneyJars.Core.Helper;
 using MoneyJars.Core.ViewModels;
+using MoneyJars.iOS.Helper;
 using MoneyJars.iOS.Views;
 using System;
 using UIKit;
@@ -29,18 +30,18 @@ namespace MoneyJars.iOS
 
         private void SetColors()
         {
-            viewExtraSpace.BackgroundColor = GlobalConst.App_Extra_Space_Color;
-            viewMainBG.BackgroundColor = GlobalConst.App_Primary_Color;
+            viewExtraSpace.BackgroundColor = Constants.App_Extra_Space_Color;
+            viewMainBG.BackgroundColor = Constants.App_Primary_Color;
 
-            viewBG1.BackgroundColor = GlobalConst.App_Secondary_Color;
+            viewBG1.BackgroundColor = Constants.App_Secondary_Color;
 
-            lblReferenceCodeTitle.TextColor = GlobalConst.App_Text_Color;
-            lblReferenceCodeValue.TextColor = GlobalConst.App_Text_Color;
-            btnShare.SetTitleColor(GlobalConst.App_Buttons_Color, UIControlState.Normal);
+            lblReferenceCodeTitle.TextColor = Constants.App_Text_Color;
+            lblReferenceCodeValue.TextColor = Constants.App_Text_Color;
+            btnShare.SetTitleColor(Constants.App_Buttons_Color, UIControlState.Normal);
 
-            lblThanksForReferMessage.TextColor = GlobalConst.App_Text_Color;
-            lblNoData.TextColor = GlobalConst.App_Text_Color;
-            btnRetry.SetTitleColor(GlobalConst.App_Primary_Color, UIControlState.Normal);
+            lblThanksForReferMessage.TextColor = Constants.App_Text_Color;
+            lblNoData.TextColor = Constants.App_Text_Color;
+            btnRetry.SetTitleColor(Constants.App_Primary_Color, UIControlState.Normal);
 
         }
 

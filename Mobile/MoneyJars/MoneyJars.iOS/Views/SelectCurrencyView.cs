@@ -1,6 +1,7 @@
 using Foundation;
 using MoneyJars.Core.Helper;
 using MoneyJars.Core.ViewModels;
+using MoneyJars.iOS.Helper;
 using MoneyJars.iOS.Views;
 using System;
 using System.Collections.Generic;
@@ -59,11 +60,11 @@ namespace MoneyJars.iOS
 
         private void SetColors()
         {
-            View.BackgroundColor = GlobalConst.App_Extra_Space_Color;
-            btnBack.TintColor = GlobalConst.App_Text_Color;
-            lblTitle.TextColor = GlobalConst.App_Text_Color;
-            viewTopBar.BackgroundColor = GlobalConst.App_Primary_Color;
-            txtSearchCurrency.TextColor = GlobalConst.App_Primary_Color;
+            View.BackgroundColor = Constants.App_Extra_Space_Color;
+            btnBack.TintColor = Constants.App_Text_Color;
+            lblTitle.TextColor = Constants.App_Text_Color;
+            viewTopBar.BackgroundColor = Constants.App_Primary_Color;
+            txtSearchCurrency.TextColor = Constants.App_Primary_Color;
         }
 
         public override void ViewDidAppear(bool animated)

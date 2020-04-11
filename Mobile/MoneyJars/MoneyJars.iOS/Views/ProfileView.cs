@@ -1,6 +1,7 @@
 using Foundation;
 using MoneyJars.Core.Helper;
 using MoneyJars.Core.ViewModels;
+using MoneyJars.iOS.Helper;
 using MoneyJars.iOS.Views;
 using System;
 using UIKit;
@@ -29,45 +30,45 @@ namespace MoneyJars.iOS
 
         private void SetColors()
         {
-            viewExtraSpace.BackgroundColor = GlobalConst.App_Extra_Space_Color;
-            viewMainBG.BackgroundColor = GlobalConst.App_Primary_Color;
+            viewExtraSpace.BackgroundColor = Constants.App_Extra_Space_Color;
+            viewMainBG.BackgroundColor = Constants.App_Primary_Color;
 
-            btnBack.TintColor = GlobalConst.App_Text_Color;
-            lblProfileTitle.TextColor = GlobalConst.App_Text_Color;
-            btnLogOut.TintColor = GlobalConst.App_Buttons_Color;
+            btnBack.TintColor = Constants.App_Text_Color;
+            lblProfileTitle.TextColor = Constants.App_Text_Color;
+            btnLogOut.TintColor = Constants.App_Buttons_Color;
 
-            imgUserProfile.BackgroundColor = GlobalConst.App_Buttons_Color;
-            lblUserName.TextColor = GlobalConst.App_Text_Color;
-            lblAccountType.TextColor = GlobalConst.App_Text_Color;
+            imgUserProfile.BackgroundColor = Constants.App_Buttons_Color;
+            lblUserName.TextColor = Constants.App_Text_Color;
+            lblAccountType.TextColor = Constants.App_Text_Color;
 
-            viewBG1.BackgroundColor = GlobalConst.App_Secondary_Color;
+            viewBG1.BackgroundColor = Constants.App_Secondary_Color;
 
-            lblTotalScoreTitle.TextColor = GlobalConst.App_Text_Color;
-            lblTotalScoreValue.TextColor = GlobalConst.App_Text_Color;
+            lblTotalScoreTitle.TextColor = Constants.App_Text_Color;
+            lblTotalScoreValue.TextColor = Constants.App_Text_Color;
 
-            lblSeparator1.BackgroundColor = GlobalConst.App_Text_Color;
+            lblSeparator1.BackgroundColor = Constants.App_Text_Color;
 
-            lblDailyProgressTitle.TextColor = GlobalConst.App_Text_Color;
-            progressDailyProgress.ProgressTintColor = GlobalConst.App_Buttons_Color;
+            lblDailyProgressTitle.TextColor = Constants.App_Text_Color;
+            progressDailyProgress.ProgressTintColor = Constants.App_Buttons_Color;
 
-            viewBG2.BackgroundColor = GlobalConst.App_Secondary_Color;
+            viewBG2.BackgroundColor = Constants.App_Secondary_Color;
 
-            lblExperienceScoreTitle.TextColor = GlobalConst.App_Text_Color;
-            lblExperienceLevel.TextColor = GlobalConst.App_Text_Color;
-            lblSeparator2.BackgroundColor = GlobalConst.App_Text_Color;
-            imgExperienceScore.TintColor = GlobalConst.App_Text_Color;
-            progressExperienceScore.ProgressTintColor = GlobalConst.App_Buttons_Color;
+            lblExperienceScoreTitle.TextColor = Constants.App_Text_Color;
+            lblExperienceLevel.TextColor = Constants.App_Text_Color;
+            lblSeparator2.BackgroundColor = Constants.App_Text_Color;
+            imgExperienceScore.TintColor = Constants.App_Text_Color;
+            progressExperienceScore.ProgressTintColor = Constants.App_Buttons_Color;
 
-            lblFutureScoreTitle.TextColor = GlobalConst.App_Text_Color;
-            lblFutureLevel.TextColor = GlobalConst.App_Text_Color;
-            imgFuture.TintColor = GlobalConst.App_Text_Color;
-            progressFuture.ProgressTintColor = GlobalConst.App_Buttons_Color;
-            lblSeparator3.BackgroundColor = GlobalConst.App_Text_Color;
+            lblFutureScoreTitle.TextColor = Constants.App_Text_Color;
+            lblFutureLevel.TextColor = Constants.App_Text_Color;
+            imgFuture.TintColor = Constants.App_Text_Color;
+            progressFuture.ProgressTintColor = Constants.App_Buttons_Color;
+            lblSeparator3.BackgroundColor = Constants.App_Text_Color;
 
-            lblInspiringScoreTitle.TextColor = GlobalConst.App_Text_Color;
-            lblInspiringLevel.TextColor = GlobalConst.App_Text_Color;
-            imgInspiring.TintColor = GlobalConst.App_Text_Color;
-            progressInspiring.ProgressTintColor = GlobalConst.App_Buttons_Color;
+            lblInspiringScoreTitle.TextColor = Constants.App_Text_Color;
+            lblInspiringLevel.TextColor = Constants.App_Text_Color;
+            imgInspiring.TintColor = Constants.App_Text_Color;
+            progressInspiring.ProgressTintColor = Constants.App_Buttons_Color;
 
 
         }

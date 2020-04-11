@@ -2,6 +2,7 @@ using CoreGraphics;
 using Foundation;
 using MoneyJars.Core.Helper;
 using MoneyJars.Core.ViewModels;
+using MoneyJars.iOS.Helper;
 using MoneyJars.iOS.Views;
 using System;
 using System.Collections.Generic;
@@ -53,12 +54,12 @@ namespace MoneyJars.iOS
         private void SetColors()
         {
 
-            View.BackgroundColor = GlobalConst.App_Extra_Space_Color;
+            View.BackgroundColor = Constants.App_Extra_Space_Color;
             
-            clvWalkThrough.BackgroundColor = GlobalConst.App_Primary_Color;
-            btnNext.BackgroundColor = GlobalConst.App_Buttons_Color;
-            pageControl.CurrentPageIndicatorTintColor = GlobalConst.App_Buttons_Color;
-            pageControl.TintColor = GlobalConst.App_Text_Color;
+            clvWalkThrough.BackgroundColor = Constants.App_Primary_Color;
+            btnNext.BackgroundColor = Constants.App_Buttons_Color;
+            pageControl.CurrentPageIndicatorTintColor = Constants.App_Buttons_Color;
+            pageControl.TintColor = Constants.App_Text_Color;
         }
 
         public override void ViewDidAppear(bool animated)

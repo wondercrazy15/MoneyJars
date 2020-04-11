@@ -1,6 +1,7 @@
 using Foundation;
 using MoneyJars.Core.Helper;
 using MoneyJars.Core.ViewModels;
+using MoneyJars.iOS.Helper;
 using MoneyJars.iOS.Views;
 using System;
 using UIKit;
@@ -25,9 +26,9 @@ namespace MoneyJars.iOS
 
         private void SetColors()
         {
-            viewExtraSpace.BackgroundColor = GlobalConst.App_Extra_Space_Color;
+            viewExtraSpace.BackgroundColor = Constants.App_Extra_Space_Color;
 
-            viewMain.BackgroundColor = GlobalConst.App_Primary_Color;
+            viewMain.BackgroundColor = Constants.App_Primary_Color;
 
         }
 

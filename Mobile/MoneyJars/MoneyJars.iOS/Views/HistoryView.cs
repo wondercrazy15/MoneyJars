@@ -1,5 +1,6 @@
 using Foundation;
 using MoneyJars.Core.Helper;
+using MoneyJars.iOS.Helper;
 using System;
 using System.Collections.Generic;
 using UIKit;
@@ -33,15 +34,15 @@ namespace MoneyJars.iOS
 
         private void SetColors()
         {
-            viewExtraSpace.BackgroundColor = GlobalConst.App_Extra_Space_Color;
+            viewExtraSpace.BackgroundColor = Constants.App_Extra_Space_Color;
 
-            viewBG1.BackgroundColor = GlobalConst.App_Primary_Color;
-            viewBG2.BackgroundColor = GlobalConst.App_Secondary_Color;
+            viewBG1.BackgroundColor = Constants.App_Primary_Color;
+            viewBG2.BackgroundColor = Constants.App_Secondary_Color;
 
-            lblSelectAJarTitle.TextColor = GlobalConst.App_Text_Color;
-            lblSelectedJar.TextColor = GlobalConst.App_Text_Color;
+            lblSelectAJarTitle.TextColor = Constants.App_Text_Color;
+            lblSelectedJar.TextColor = Constants.App_Text_Color;
 
-            tblHistory.BackgroundColor = GlobalConst.App_Primary_Color;
+            tblHistory.BackgroundColor = Constants.App_Primary_Color;
         }
     }
 }

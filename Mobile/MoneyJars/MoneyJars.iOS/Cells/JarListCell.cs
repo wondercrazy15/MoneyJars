@@ -1,5 +1,6 @@
 using Foundation;
 using MoneyJars.Core.Helper;
+using MoneyJars.iOS.Helper;
 using System;
 using UIKit;
 
@@ -13,9 +14,9 @@ namespace MoneyJars.iOS
 
         internal void UpdateCell(string data)
         {
-            lblJarTitle.TextColor = GlobalConst.App_Text_Color;
-            lblJarAmount.TextColor = GlobalConst.App_Text_Color;
-            progressJarAmount.ProgressTintColor = GlobalConst.App_Buttons_Color;
+            lblJarTitle.TextColor = Constants.App_Text_Color;
+            lblJarAmount.TextColor = Constants.App_Text_Color;
+            progressJarAmount.ProgressTintColor = Constants.App_Buttons_Color;
         }
     }
 }

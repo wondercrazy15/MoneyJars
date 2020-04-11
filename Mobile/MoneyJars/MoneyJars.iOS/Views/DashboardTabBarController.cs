@@ -1,5 +1,6 @@
 using Foundation;
 using MoneyJars.Core.Helper;
+using MoneyJars.iOS.Helper;
 using System;
 using UIKit;
 
@@ -9,7 +10,7 @@ namespace MoneyJars.iOS
     {
         public DashboardTabBarController (IntPtr handle) : base (handle)
         {
-            this.TabBar.SelectedImageTintColor = GlobalConst.App_Buttons_Color;
+            this.TabBar.SelectedImageTintColor = Constants.App_Buttons_Color;
 
 
             //HomeView home = Storyboard.InstantiateViewController("HomeView") as HomeView;

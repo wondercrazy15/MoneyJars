@@ -1,6 +1,7 @@
 using Foundation;
 using MoneyJars.Core.Helper;
 using MoneyJars.Core.ViewModels;
+using MoneyJars.iOS.Helper;
 using MoneyJars.iOS.Views;
 using System;
 using UIKit;
@@ -29,21 +30,21 @@ namespace MoneyJars.iOS
 
         private void SetColors()
         {
-            viewExtraSpace.BackgroundColor = GlobalConst.App_Extra_Space_Color;
-            viewMainBG.BackgroundColor = GlobalConst.App_Primary_Color;
+            viewExtraSpace.BackgroundColor = Constants.App_Extra_Space_Color;
+            viewMainBG.BackgroundColor = Constants.App_Primary_Color;
 
-            btnBack.TintColor = GlobalConst.App_Text_Color;
+            btnBack.TintColor = Constants.App_Text_Color;
 
-            lblReferenceCodeTitle.TextColor = GlobalConst.App_Text_Color;
-            lblReferenceCodeMessage.TextColor = GlobalConst.App_Text_Color;
+            lblReferenceCodeTitle.TextColor = Constants.App_Text_Color;
+            lblReferenceCodeMessage.TextColor = Constants.App_Text_Color;
 
-            lblEnterCodeTitle.TextColor = GlobalConst.App_Text_Color;
-            txtReferenceCode.TextColor = GlobalConst.App_Buttons_Color;
-            txtReferenceCode.TintColor = GlobalConst.App_Buttons_Color;
-            txtReferenceCode.BackgroundColor = GlobalConst.App_Text_Color;
+            lblEnterCodeTitle.TextColor = Constants.App_Text_Color;
+            txtReferenceCode.TextColor = Constants.App_Buttons_Color;
+            txtReferenceCode.TintColor = Constants.App_Buttons_Color;
+            txtReferenceCode.BackgroundColor = Constants.App_Text_Color;
 
-            btnSubmit.SetTitleColor(GlobalConst.App_Text_Color, UIControlState.Normal);
-            btnSubmit.BackgroundColor = GlobalConst.App_Buttons_Color;
+            btnSubmit.SetTitleColor(Constants.App_Text_Color, UIControlState.Normal);
+            btnSubmit.BackgroundColor = Constants.App_Buttons_Color;
         }
 
         partial void btnBackClicked(UIButton sender)

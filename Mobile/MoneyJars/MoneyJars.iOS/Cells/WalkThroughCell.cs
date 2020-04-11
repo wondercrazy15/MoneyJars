@@ -1,5 +1,6 @@
 using Foundation;
 using MoneyJars.Core.Helper;
+using MoneyJars.iOS.Helper;
 using System;
 using System.Collections.Generic;
 using UIKit;
@@ -14,8 +15,8 @@ namespace MoneyJars.iOS
 
         internal void UpdateCell(Dictionary<string, string> data)
         {
-            lblTitle.TextColor = GlobalConst.App_Text_Color;
-            lblMessage.TextColor = GlobalConst.App_Text_Color;
+            lblTitle.TextColor = Constants.App_Text_Color;
+            lblMessage.TextColor = Constants.App_Text_Color;
 
             lblTitle.Text = data["Title"];
             lblMessage.Text = data["Message"];

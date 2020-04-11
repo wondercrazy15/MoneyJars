@@ -1,5 +1,6 @@
 using Foundation;
 using MoneyJars.Core.Helper;
+using MoneyJars.iOS.Helper;
 using System;
 using System.Collections.Generic;
 using UIKit;
@@ -14,11 +15,11 @@ namespace MoneyJars.iOS
 
         internal void UpdateCell(string data)
         {
-            lblHistoryAmount.TextColor = GlobalConst.App_Green_Color;
+            lblHistoryAmount.TextColor = Constants.App_Green_Color;
 
-            lblHistoryTitle.TextColor = GlobalConst.App_Text_Color;
-            lblHistoryMessage.TextColor = GlobalConst.App_Text_Color;
-            lblHistoryDate.TextColor = GlobalConst.App_Text_Color;
+            lblHistoryTitle.TextColor = Constants.App_Text_Color;
+            lblHistoryMessage.TextColor = Constants.App_Text_Color;
+            lblHistoryDate.TextColor = Constants.App_Text_Color;
         }
     }
 }

@@ -1,6 +1,7 @@
 using Foundation;
 using MoneyJars.Core.Helper;
 using MoneyJars.Core.ViewModels;
+using MoneyJars.iOS.Helper;
 using MoneyJars.iOS.Views;
 using System;
 using UIKit;
@@ -29,21 +30,22 @@ namespace MoneyJars.iOS
 
         private void SetColors()
         {
-            viewExtraSpace.BackgroundColor = GlobalConst.App_Extra_Space_Color;
+            viewExtraSpace.BackgroundColor = Constants.App_Extra_Space_Color;
 
-            viewMain.BackgroundColor = GlobalConst.App_Primary_Color;
+            viewMain.BackgroundColor = Constants.App_Primary_Color;
 
-
-            btnBack.TintColor = GlobalConst.App_Text_Color;
-            lblInformationTitle.TextColor = GlobalConst.App_Text_Color;
+            btnBack.TintColor = Constants.App_Text_Color;
+            lblInformationTitle.TextColor = Constants.App_Text_Color;
 
             imgAppIcon.Layer.CornerRadius = imgAppIcon.Frame.Size.Height / 2;
             imgAppIcon.ClipsToBounds = true;
+            imgAppIcon.BackgroundColor = Constants.App_Buttons_Color;
 
-            lblAppName.TextColor = GlobalConst.App_Text_Color;
-            lblVersion.TextColor = GlobalConst.App_Text_Color;
-            lblDevice.TextColor = GlobalConst.App_Text_Color;
-            lblUserId.TextColor = GlobalConst.App_Text_Color;
+
+            lblAppName.TextColor = Constants.App_Text_Color;
+            lblVersion.TextColor = Constants.App_Text_Color;
+            lblDevice.TextColor = Constants.App_Text_Color;
+            lblUserId.TextColor = Constants.App_Text_Color;
 
 
         }
