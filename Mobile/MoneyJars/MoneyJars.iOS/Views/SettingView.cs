@@ -152,7 +152,8 @@ namespace MoneyJars.iOS
 
         partial void btnGuideClicked(UIButton sender)
         {
-            
+            GuideView vc = Storyboard.InstantiateViewController("GuideView") as GuideView;
+            NavigationController.PushViewController(vc, true);
         }
 
         partial void btnFAQClicked(UIButton sender)

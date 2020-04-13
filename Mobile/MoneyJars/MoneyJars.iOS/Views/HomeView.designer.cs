@@ -150,6 +150,10 @@ namespace MoneyJars.iOS
         [GeneratedCode ("iOS Designer", "1.0")]
         UIKit.UIView viewExtraSpace { get; set; }
 
+        [Action ("btnMoreHistoryClicked:")]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        partial void btnMoreHistoryClicked (UIKit.UIButton sender);
+
         void ReleaseDesignerOutlets ()
         {
             if (btnExpenseImage != null) {

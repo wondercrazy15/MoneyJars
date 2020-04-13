@@ -99,5 +99,11 @@ namespace MoneyJars.iOS
         {
             return UIStatusBarStyle.LightContent;
         }
+
+        partial void btnMoreHistoryClicked(UIButton sender)
+        {
+            HistoryDetailView vc = Storyboard.InstantiateViewController("HistoryDetailView") as HistoryDetailView;
+            NavigationController.PushViewController(vc, true);
+        }
     }
 }

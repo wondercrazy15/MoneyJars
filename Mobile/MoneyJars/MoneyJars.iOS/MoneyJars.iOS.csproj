@@ -260,6 +260,15 @@
         </Compile>
         <Compile Include="Helper\Constants.cs" />
         <Compile Include="Helper\Methods.cs" />
+        <Compile Include="Views\GuideView.cs" />
+        <Compile Include="Views\GuideView.designer.cs">
+          <DependentUpon>GuideView.cs</DependentUpon>
+        </Compile>
+        <Compile Include="Views\HistoryDetailView.cs" />
+        <Compile Include="Views\HistoryDetailView.designer.cs">
+          <DependentUpon>HistoryDetailView.cs</DependentUpon>
+        </Compile>
+        <Compile Include="Sources\HistoryDetailTableSource.cs" />
     </ItemGroup>
     <ItemGroup>
       <ProjectReference Include="..\MoneyJars.Core\MoneyJars.Core.csproj">

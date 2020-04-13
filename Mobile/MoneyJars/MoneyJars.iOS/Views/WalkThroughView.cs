@@ -58,6 +58,7 @@ namespace MoneyJars.iOS
             
             clvWalkThrough.BackgroundColor = Constants.App_Primary_Color;
             btnNext.BackgroundColor = Constants.App_Buttons_Color;
+            btnNext.SetTitleColor(Constants.App_Text_Color, UIControlState.Normal);
             pageControl.CurrentPageIndicatorTintColor = Constants.App_Buttons_Color;
             pageControl.TintColor = Constants.App_Text_Color;
         }
